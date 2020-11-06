@@ -44,7 +44,7 @@ def handle_message(event):
         r = msg
     elif msg == '你吃飯了嗎?':
         r = '我是機器人，不用吃飯哦!'
-    elif msg == '訂位' in msg:
+    elif '訂位' in msg:
         r = '你想訂位嗎? 我們訂位服務還沒起用哦。'
 
     line_bot_api.reply_message(
